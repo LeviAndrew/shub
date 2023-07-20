@@ -2,7 +2,7 @@
 // eslint-disable-next-line linebreak-style
 /* eslint-disable semi */
 /* eslint-disable linebreak-style */
-const connection = require('../connection');
+const connection = require('../connection'); // MySQL
 
 const getAllPop = async () => {
     const populacao = await connection.execute('SELECT * FROM populacao');

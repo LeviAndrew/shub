@@ -7,7 +7,7 @@ Também é necessário instalar os pacotes do Node JS dentro da pasta backend:
 - Para entrar na pasta --> cd .\backend\
 - Para gerar o nome_modules --> npm install ou npm i
 
-Rode o MySQL na máquina e suba um container no docker com o MySQL:
+Rode o MySQL na máquina e suba um container no docker com o MySQL: (ou PostgreSQL, porta 5432)
 - Comando para realizar isso: docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql
 
 Obs: Nesse comando está definindo o nome da imagem como "mysql", mas pode ser qualquer um. Além disso, foi definido a senha para conexão como sendo "root", que também pode ser qualquer uma outra. Este comando também está definindo que a porta 3306 da máquina irá se conectar com a porta 3306 do container, essa é a porta padrão do MySQL. Por fim, é passado a imagem que queremos rodar que é o mysql.
